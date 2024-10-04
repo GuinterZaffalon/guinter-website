@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        backgroundgradient1: "#0F2845",
+        backgroundgradient2: "#717297"
       },
     },
   },
