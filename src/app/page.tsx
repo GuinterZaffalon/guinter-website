@@ -18,11 +18,9 @@ export default function Home() {
           <p className="text-3xl">Desenvolva seu mundo...</p>
         </div>
         <div className="row-span-6 w-full h-full justify-center flex gap-4">
-          <div className="border border-b-slate-500 flex-row gap-5 flex h-full w-2/6">
-            <div className="h-1/6 w-1/6">
+          <div className="border border-b-slate-500 rounded-lg flex-row gap-5 flex h-full w-2/6">
               <InstagramIcon sizeHeight="80" sizeWidht="80"/>
-            </div>
-            <p>@zaffalonguinter no Instagram</p>
+            <p>@zaffalonguinter</p>
           </div>
         </div>
       </div>
