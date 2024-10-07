@@ -43,7 +43,7 @@ export default function Home() {
             return (
               <a href={link} key={index} target="_blank">
                 <div
-                  className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custom hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
+                  className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custoum hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
                 >
                   {text}
                 </div>
@@ -52,6 +52,7 @@ export default function Home() {
           })}
         </div>
       </div>
+      
     </div>
   )
 }
