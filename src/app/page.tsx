@@ -16,7 +16,7 @@ export default function Home() {
     {
       color: "bg-card3",
       text: "E-Mail para contato! 📧",
-      link: "https://github.com",
+      link: "https://guinterzafa@gmail.com",
     },
   ];
 
@@ -52,7 +52,7 @@ export default function Home() {
           })}
         </div>
       </div>
-      
+
     </div>
   )
 }
