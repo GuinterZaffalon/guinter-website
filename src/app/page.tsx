@@ -1,40 +1,29 @@
-import InstagramIcon from "@/componentes/intagramIcon";
+import icon from "../imagens/pipiipipi 1.png"
+import Image from 'next/image'
 
-export default function PaginaTeste() {
-    return(
-        <div className="w-full h-screen bg-background_page">
-            <div className="max-w-2xl mx-auto h-screen">
-                <Image 
-                src={icon}
-                alt="icon do us"
-                />
-            </div>
-        <div className="row-span-1 h-full w-full justify-center flex flex-col text-center gap-1">
-          <p className="text-5xl">Guinter Zaffalon</p>
-          <p className="text-2xl">Mobile Developer</p>
+export default function Home() {
+  return (
+    <div className="w-full h-screen bg-background_page">
+      <div className="max-w-2xl mx-auto h-screen">
+        <div className="h-48 w-48 mx-auto">
+          <div className="h-48 w-48">
+            <Image
+              src={icon}
+              alt="icon do us"
+              height={500}
+              width={500}
+              className="rounded-full object-cover"
+            />
+          </div>
         </div>
-        <div className="row-span-1 h-full w-full justify-center flex text-center p-4">
-          <p className="text-3xl">Desenvolva seu mundo...</p>
+        <div className="text-center p-6">
+          <h1 className="text-4xl font-bold">Guinter Zaffalon</h1>
+          <p className="text- mt-3">Mobile Developer</p>
         </div>
-        <div className="row-span-6 w-full h-full justify-center items-center flex-col flex gap-4">
-          <div className="border border-b-slate-500 rounded-lg flex-row gap-5 flex h-full w-2/6">
-            <InstagramIcon sizeHeight="80" sizeWidht="80"/>
-            <p>@zaffalonguinter</p>
-          </div>
-          <div className="border border-b-slate-500 rounded-lg flex-row gap-5 flex h-full w-2/6">
-            <InstagramIcon sizeHeight="80" sizeWidht="80"/>
-            <p>@zaffalonguinter</p>
-          </div>
-          <div className="border border-b-slate-500 rounded-lg flex-row gap-5 flex h-full w-2/6">
-            <InstagramIcon sizeHeight="80" sizeWidht="80"/>
-            <p>@zaffalonguinter</p>
-          </div>
-          <div className="border border-b-slate-500 rounded-lg flex-row gap-5 flex h-full w-2/6">
-            <InstagramIcon sizeHeight="80" sizeWidht="80"/>
-            <p>@zaffalonguinter</p>
-          </div>
+        <div className="">
+
         </div>
       </div>
-    </main>
-  );
+    </div>
+  )
 }
