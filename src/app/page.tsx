@@ -16,7 +16,7 @@ export default function Home() {
     {
       color: "bg-card3",
       text: "E-Mail para contato! 📧",
-      link: "https://guinterzafa@gmail.com",
+      link: "mailto:contato@guinter.dev",
     },
   ];
 
