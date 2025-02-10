@@ -32,6 +32,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="items-center flex justify-center mt-5">
+      <span className="text-3xl font-virgil">Projetos!</span>
+      </div>
     </div>
   )
 }
