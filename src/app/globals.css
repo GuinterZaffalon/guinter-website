@@ -33,3 +33,10 @@ body {
     font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./fonts/JetBrainsMono.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
