@@ -1,5 +1,6 @@
 import icon from "../imagens/pipiipipi 1.png"
 import Image from 'next/image'
+import { Header } from "./componentes/header";
 
 export default function Home() {
   const links = [
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen bg-background_page">
       <div className="max-w-2xl mx-auto h-screen">
+        <Header/>
         <div className="h-48 w-48 mx-auto">
           <div className="h-48 w-48 p-6 ">
             <Image
