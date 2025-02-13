@@ -1,13 +1,14 @@
 import icon from "../imagens/pipiipipi 1.png"
 import Image from 'next/image'
 import { Header } from "./componentes/header";
+import ReadingTracker from "./componentes/readingTracker";
 
 export default function Home() {
   return (
     <div className="w-full min-h-screen bg-white">
       <Header />
-      <div className="flex-row flex w-4/5 mx-auto gap-48">
-        <div className="flex flex-col justify-center items-center gap-2 mt-32">
+      <div className="flex-row flex mx-auto justify-around mt-10">
+        <div className="flex flex-col justify-center items-center gap-2">
           <div className="flex flex-row gap-3">
             <span className="text-2xl font-virgil">olá!</span>
             <span className="text-3xl font-jetbrainsmono">Guinter Zaffalon</span>
@@ -22,18 +23,17 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="flex mt-32">
-          <Image
-            src={icon}
-            alt="icon do us"
-            height={500}
-            width={500}
-            className=" rounded-full object-cover"
-          />
-        </div>
+        <Image
+          src={icon}
+          alt="icon do us"
+          height={400}
+          width={400}
+          className=" rounded-full object-cover"
+        />
       </div>
-      <div className="items-center flex justify-center mt-5">
-      <span className="text-3xl font-virgil">Projetos!</span>
+      <div className="items-center flex flex-col justify-center mt-5">
+        <span className="text-3xl font-virgil">Projetos!</span>
+        <ReadingTracker />
       </div>
     </div>
   )

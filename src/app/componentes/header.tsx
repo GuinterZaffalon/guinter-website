@@ -1,6 +1,6 @@
 export async function Header() {
     return(
-        <div className="flex justify-between pt-1">
+        <div className="flex justify-between mt-3">
             <div className="font-virgil text-black text-2xl pl-2">
                 Home 
             </div>
