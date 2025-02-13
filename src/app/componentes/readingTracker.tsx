@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import screen from "../imagens/screenshot1RT.jpg"
+import screen1 from "@/imagens/screenshot1RT.jpg"
+import screen2 from "@/imagens/screenshotRT2.jpg"
+import screen3 from "@/imagens/screenshotRT3.jpg"
 
 export default function ReadingTracker() {
     return (
@@ -15,10 +17,24 @@ export default function ReadingTracker() {
             </div>
             <div className="w-1/2 flex-row flex">
                 <Image
-                    src={screen}
-                    height={700}
-                    width={300}
+                    src={screen1}
+                     height={500}
+                     width={300}
                     alt="Reading Tracker"
+                    className='-rotate-12'
+                />
+                <Image
+                    src={screen2}
+                     height={500}
+                     width={300}
+                    alt="Reading Tracker"
+                />
+                <Image
+                    src={screen3}
+                     height={500}
+                     width={300}
+                    alt="Reading Tracker"
+                    className='rotate-12'
                 />
             </div>
         </div>
