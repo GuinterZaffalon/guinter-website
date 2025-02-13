@@ -32,17 +32,9 @@ export default function Home() {
         />
       </div>
       <div className="items-center flex flex-col justify-center mt-5">
-        <span className="text-3xl font-virgil">Projetos!</span>
+        <span className="text-4xl font-virgil">Projetos!</span>
         <ReadingTracker />
       </div>
     </div>
   )
 }
-
-{/* <Image
-              src={icon}
-              alt="icon do us"
-              height={500}
-              width={500}
-              className="rounded-full object-cover"
-            /> */}
