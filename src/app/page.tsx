@@ -1,3 +1,5 @@
+"use client"
+
 import icon from "../imagens/pipiipipi 1.png"
 import Image from 'next/image'
 import { Header } from "./componentes/header";
