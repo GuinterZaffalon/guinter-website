@@ -5,6 +5,7 @@ export default function JobInjection() {
     const [job, setJob] = useState({ position: '', seniority: '', notWords: '' });
     const { register, handleSubmit, setValue, control } = useForm();
 
+    const linkbase = "https://www.linkedin.com/jobs/search/?&keywords=";
 
 
     return (
@@ -15,7 +16,7 @@ export default function JobInjection() {
                     action=""
                     // onChange={handleSubmit(onSubmiData)}
                     className="flex flex-col gap-2">
-
+                    <select name="" id=""></select>
                 </form>
             </div>
         </div>
