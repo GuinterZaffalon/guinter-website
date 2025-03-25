@@ -17,7 +17,7 @@ export default function ReadingTracker() {
                 <span className="text-xl font-virgil">Desenvolvido com: <span className="font-jetbrainsmono">Flutter, chamadas HTTP e Sqlite</span> </span>
             </div>
             <div className="w-1/2 flex flex-col">
-                <Carousel className="rounded-xl" autoplay loop>
+                {/* <Carousel className="rounded-xl" autoplay loop>
                     <div className="flex justify-center">
                         <Image
                             src={screen1}
@@ -45,7 +45,7 @@ export default function ReadingTracker() {
                             className="rounded-xl"
                         />
                     </div>
-                </Carousel>
+                </Carousel> */}
             </div>
         </div>
     )
