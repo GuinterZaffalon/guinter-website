@@ -47,6 +47,7 @@ export default function JobInjection() {
         { value: "Pleno", label: "Pleno" },
         { value: "Senior", label: "Senior" },
     ]
+    
 
     return (
         <div className="bg-[#1e293b] w-full h-screen">
@@ -54,20 +55,21 @@ export default function JobInjection() {
                 <h1 className="text-4xl text-white font-mono">Job Injection</h1>
                 <form
                     action=""
-                    // onChange={handleSubmit(onSubmiData)}
                     className="flex flex-col gap-2">
                     <div className="flex flex-row gap-2">
                         <div className="w-full">
-                            <label className="block mb-2 text-sm font-mono text-gray-900 dark:text-white">Cargo:</label>
-                            <input type="text" id="first_name" {...register("position")} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" required autoFocus/>
+                            <label className="block mb-2 text-sm font-mono text-white dark:text-white">Cargo:</label>
+                            <input type="text" id="first_name" {...register("position")} className="bg-gray-50 border border-gray-300 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-neutral-700 dark:hover:bg-neutral-800" required autoFocus/>
                         </div>
                         <div className="w-3/4">
-                            <label className="block mb-2 text-sm font-mono text-gray-900 dark:text-white">Senioridade:</label>
+                            <label className="block mb-2 text-sm font-mono text-white dark:text-white">Senioridade:</label>
                             <Controller
                                 control={control}
                                 {...register("seniority")}
                                 render={({ field }) => (
                                     <Select
+                                    className="my-react-select-container"
+   classNamePrefix="my-react-select"
                                     placeholder="Selecione"
                                         options={optionsSeniority}
                                         value={optionsSeniority.find(option => option.value === field.value) || null}
@@ -80,12 +82,14 @@ export default function JobInjection() {
 
                     </div>
                     <div>
-                        <label className="block mb-2 text-sm font-mono text-gray-900 dark:text-white">Modalidade:</label>
+                        <label className="block mb-2 text-sm font-mono text-white dark:text-white">Modalidade:</label>
                         <Controller
                             control={control}
                             {...register("modality")}
                             render={({ field }) => (
                                 <Select
+className="my-react-select-container"
+   classNamePrefix="my-react-select"
                                 placeholder="Selecione"
                                     options={optionsModality}
                                     value={optionsModality.find(option => option.value === field.value) || null}
@@ -95,12 +99,14 @@ export default function JobInjection() {
                         />
                     </div>
                     <div>
-                        <label className="block mb-2 text-sm font-mono text-gray-900 dark:text-white">Data do anúncio:</label>
+                        <label className="block mb-2 text-sm font-mono text-white dark:text-white">Data do anúncio:</label>
                         <Controller
                             control={control}
                             {...register("period")}
                             render={({ field }) => (
                                 <Select
+                                className="my-react-select-container"
+   classNamePrefix="my-react-select"
                                 placeholder="Selecione"
                                     options={optionsData}
                                     value={optionsData.find(option => option.value === field.value) || null}
@@ -119,7 +125,7 @@ export default function JobInjection() {
                         modality={formValues.modality}
                         period={formValues.period}
                         /> ) : (
-                        <button disabled className="px-2 flex font-mono">
+                        <button disabled className="px-2 flex font-mono text-white dark:text-white">
                                     Prencha os dados
                                 </button>
                     )}
