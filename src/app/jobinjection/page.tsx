@@ -30,9 +30,9 @@ export default function JobInjection() {
         formValues.period;
 
     const optionsModality = [
-        { value: 1, label: "Híbrido" },
+        { value: 1, label: "Presencial" },
         { value: 2, label: "Remoto" },
-        { value: 3, label: "Presencial" },
+        { value: 3, label: "Hibrido" },
     ]
 
     const optionsData = [
