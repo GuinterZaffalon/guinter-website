@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import { Controller, useForm, useWatch } from "react-hook-form";
 import Select from "react-select";
+import Link from "next/link";
 
 export default function Write4Me() {
     const { register, control } = useForm({
         defaultValues: {
             name: '',
             describe: '',
-            framework: '',
-            tarefas: [],
+            framework: ''
         },
     })
     const [seeSelect, setSeeSelect] = useState(false);
@@ -19,15 +19,13 @@ export default function Write4Me() {
     const formValues = useWatch({ control }) || {
         name: '',
         describe: '',
-        framework: '',
-        tarefas: [],
+        framework: ''
     }
 
     const isFormValid =
         formValues.name &&
         formValues.describe &&
-        formValues.framework &&
-        formValues.tarefas;
+        formValues.framework;
 
     const frameworksOptions = [
         { value: 'Flutter', label: 'Flutter' },
@@ -102,11 +100,13 @@ export default function Write4Me() {
                     </div>
                     <div className="flex justify-around">
                         <button
+                        type="button"
                             onClick={() => handleClick(true)}
                             className="px-4 pb-2 pt-2 border rounded-lg bg-black">
                             Sim
                         </button>
                         <button
+                        type="button"
                             onClick={() => handleClick(false)}
                             className="px-4 pb-2 pt-2 border rounded-lg bg-black">
                             Não
@@ -157,12 +157,36 @@ export default function Write4Me() {
                                             />
                                         </div>
                                 }
-
                             </div>
-                        ) : (
-                            <div />)
+                        ) :
+                            (
+                                <div></div>
+                            )
                         }
                     </div>
+                    {isFormValid ? (
+                        <div className="w-full justify-center flex pt-3">
+                            {/* <button disabled className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white">
+                            Prencha os campos
+                        </button> */}
+                            <Link
+                                className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white"
+                                href={{
+                                    pathname: '/result',
+                                    query: { readme: JSON.stringify({ name: formValues.name, describe: formValues.describe, framework: formValues.framework }) }
+                                }
+                                }
+                            >
+                                Criar Readme
+                            </Link>
+                        </div>
+                    ) : (
+                        <div className="w-full justify-center flex pt-3">
+                            <button disabled className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white">
+                                Prencha os campos
+                            </button>
+                        </div>
+                    )}
                 </form>
             </div >
         </div >
