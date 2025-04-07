@@ -67,7 +67,7 @@ export default function Write4Me() {
                 <h1 className="text-4xl text-white font-lewis bg-black p-2 font-bold dark:text-white">WRITE 4 ME</h1>
                 <form action=""
                     className="flex flex-col gap-3 w-full max-w-xl">
-                    <div className="w-full">
+                    <div className="w-full p-1">
                         <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
                             Nome do Projeto:<span className="text-sm text-gray-600 font-normal ml-2">(dica: mesmo nome do repo!)</span>
                         </label>
@@ -80,7 +80,7 @@ export default function Write4Me() {
                             autoFocus
                         />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full p-1">
                         <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
                             Descricao:<span className="text-sm text-gray-600 font-normal ml-2">(descreva em 2 linhas no máx!)</span>
                         </label>
@@ -93,7 +93,7 @@ export default function Write4Me() {
                             autoFocus
                         />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full p-1">
                         <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
                             Usando Framework?
                         </label>
@@ -117,7 +117,7 @@ export default function Write4Me() {
                             <div>
                                 {
                                     framework ? (
-                                        <div className="w-full" >
+                                        <div className="w-full p-1" >
                                             <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
                                                 Qual framework?
                                             </label>
@@ -137,7 +137,7 @@ export default function Write4Me() {
                                             />
                                         </div>
                                     ) :
-                                        <div className="w-full" >
+                                        <div className="w-full p-1" >
                                             <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
                                                 Qual tecnologia?
                                             </label>
@@ -180,7 +180,7 @@ export default function Write4Me() {
                     ) : (
                         <div className="w-full justify-center flex pt-3">
                             <button disabled className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white">
-                                Prencha os campos
+                                Preencha os campos
                             </button>
                         </div>
                     )}
