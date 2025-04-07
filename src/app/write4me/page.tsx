@@ -99,18 +99,24 @@ export default function Write4Me() {
                         </label>
                     </div>
                     <div className="flex justify-around w-full gap-3">
+                        <div>
+
                         <button
                             type="button"
                             onClick={() => handleClick(true)}
                             className="w-full p-2 border rounded-lg bg-black">
                             Sim
                         </button>
+                                </div>
+                                <div>
+
                         <button
                             type="button"
                             onClick={() => handleClick(false)}
                             className="w-full border rounded-lg bg-black">
                             Não
                         </button>
+                                </div>
                     </div>
                     <div>
                         {seeSelect ? (
