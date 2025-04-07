@@ -95,7 +95,7 @@ export default function Write4Me() {
                     </div>
                     <div className="w-full p-1">
                         <label className="block mb-1 text-xl font-nuno font-bold text-white dark:text-black">
-                            Usando Framework?
+                            Usando alguma Framework?
                         </label>
                     </div>
                     <div className="flex justify-around w-full gap-3">
