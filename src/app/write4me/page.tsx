@@ -166,13 +166,10 @@ export default function Write4Me() {
                     </div>
                     {isFormValid ? (
                         <div className="w-full justify-center flex pt-3">
-                            {/* <button disabled className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white">
-                            Prencha os campos
-                        </button> */}
                             <Link
                                 className="px-4 pt-2 pb-2 flex font-mono rounded-lg  bg-black text-black dark:text-white"
                                 href={{
-                                    pathname: '/result',
+                                    pathname: 'write4me/result',
                                     query: { readme: JSON.stringify({ name: formValues.name, describe: formValues.describe, framework: formValues.framework }) }
                                 }
                                 }
