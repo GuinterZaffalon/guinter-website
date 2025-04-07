@@ -13,6 +13,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const geistLewis = localFont({
+  src: "./fonts/LEWIS.woff",
+  variable: "--font-geist-lewis",
+  weight: "100 900",
+})
+
 export const metadata: Metadata = {
   title: "Job Injection",
   description: "A simple website with special content",

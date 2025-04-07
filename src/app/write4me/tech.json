@@ -1,0 +1,246 @@
+{
+    "Flutter": {
+        "requisitos": [
+            "Flutter SDK",
+            "Android Studio (ou Xcode para iOS)",
+            "Emulador ou dispositivo físico"
+        ],
+        "instalacao": [
+            "flutter pub get",
+            "flutter run"
+        ]
+    },
+    "Next.js": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm ou yarn"
+        ],
+        "instalacao": [
+            "npm install",
+            "npm run dev"
+        ]
+    },
+    "React Native": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm ou yarn",
+            "Expo CLI ou React Native CLI",
+            "Android Studio ou Xcode"
+        ],
+        "instalacao": [
+            "npm install",
+            "npx expo start"
+        ]
+    },
+    "React": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm ou yarn"
+        ],
+        "instalacao": [
+            "npm install",
+            "npm start"
+        ]
+    },
+    "Vue.js": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm ou yarn"
+        ],
+        "instalacao": [
+            "npm install",
+            "npm run serve"
+        ]
+    },
+    "Angular": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm",
+            "Angular CLI"
+        ],
+        "instalacao": [
+            "npm install",
+            "ng serve"
+        ]
+    },
+    "Svelte": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm ou yarn"
+        ],
+        "instalacao": [
+            "npm install",
+            "npm run dev"
+        ]
+    },
+    "Ember": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm",
+            "Ember CLI"
+        ],
+        "instalacao": [
+            "npm install",
+            "ember serve"
+        ]
+    },
+    "Laravel": {
+        "requisitos": [
+            "PHP 8.1+",
+            "Composer",
+            "MySQL ou SQLite",
+            "Laravel CLI"
+        ],
+        "instalacao": [
+            "composer install",
+            "cp .env.example .env",
+            "php artisan key:generate",
+            "php artisan migrate"
+        ]
+    },
+    "Django": {
+        "requisitos": [
+            "Python 3.10+",
+            "pip",
+            "virtualenv (opcional)"
+        ],
+        "instalacao": [
+            "pip install -r requirements.txt",
+            "python manage.py migrate",
+            "python manage.py runserver"
+        ]
+    },
+    "Express.js": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm"
+        ],
+        "instalacao": [
+            "npm install",
+            "node index.js"
+        ]
+    },
+    "Spring Boot": {
+        "requisitos": [
+            "Java 17+",
+            "Maven ou Gradle"
+        ],
+        "instalacao": [
+            "mvn clean install",
+            "mvn spring-boot:run"
+        ]
+    },
+    "Nest.js": {
+        "requisitos": [
+            "Node.js 18+",
+            "npm",
+            "Nest CLI"
+        ],
+        "instalacao": [
+            "npm install",
+            "npm run start:dev"
+        ]
+    },
+    "Symfony": {
+        "requisitos": [
+            "PHP 8.1+",
+            "Composer",
+            "MySQL ou SQLite",
+            "Symfony CLI (opcional)"
+        ],
+        "instalacao": [
+            "composer install",
+            "cp .env.example .env",
+            "php bin/console doctrine:migrations:migrate",
+            "symfony server:start"
+        ]
+    },
+    "Flask": {
+        "requisitos": [
+            "Python 3.10+",
+            "pip",
+            "virtualenv (opcional)"
+        ],
+        "instalacao": [
+            "pip install -r requirements.txt",
+            "flask run"
+        ]
+    },
+    "FastAPI": {
+        "requisitos": [
+            "Python 3.10+",
+            "pip"
+        ],
+        "instalacao": [
+            "pip install -r requirements.txt",
+            "uvicorn main:app --reload"
+        ]
+    },
+    "Ruby on Rails": {
+        "requisitos": [
+            "Ruby 3.1+",
+            "Rails",
+            "SQLite, PostgreSQL ou MySQL",
+            "Bundler"
+        ],
+        "instalacao": [
+            "bundle install",
+            "rails db:migrate",
+            "rails server"
+        ]
+    },
+    "PHP Puro": {
+        "requisitos": [
+            "PHP 8.1+",
+            "Servidor HTTP (como Apache ou Nginx - opcional)"
+        ],
+        "instalacao": [
+            "php -S localhost:8000"
+        ]
+    },
+    "Python Puro": {
+        "requisitos": [
+            "Python 3.10+"
+        ],
+        "instalacao": [
+            "python script.py"
+        ]
+    },
+    "Java Puro": {
+        "requisitos": [
+            "Java JDK 17+"
+        ],
+        "instalacao": [
+            "javac Main.java",
+            "java Main"
+        ]
+    },
+    "C# Puro": {
+        "requisitos": [
+            ".NET SDK 7.0+"
+        ],
+        "instalacao": [
+            "dotnet new console -n MeuProjeto",
+            "cd MeuProjeto",
+            "dotnet run"
+        ]
+    },
+    "C++ Puro": {
+        "requisitos": [
+            "GCC ou Clang"
+        ],
+        "instalacao": [
+            "g++ main.cpp -o app",
+            "./app"
+        ]
+    },
+    "C Puro": {
+        "requisitos": [
+            "GCC ou Clang"
+        ],
+        "instalacao": [
+            "gcc main.c -o app",
+            "./app"
+        ]
+    }
+}

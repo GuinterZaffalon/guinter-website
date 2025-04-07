@@ -22,11 +22,11 @@ export default function JobInjection() {
         modality: 0,
         period: '',
     };
-    
-    const isFormValid = 
-        formValues.position && 
-        formValues.seniority && 
-        formValues.modality && 
+
+    const isFormValid =
+        formValues.position &&
+        formValues.seniority &&
+        formValues.modality &&
         formValues.period;
 
     const optionsModality = [
@@ -47,7 +47,7 @@ export default function JobInjection() {
         { value: "Pleno", label: "Pleno" },
         { value: "Senior", label: "Senior" },
     ]
-    
+
 
     return (
         <div className="bg-[#1e293b] w-full h-screen">
@@ -59,7 +59,7 @@ export default function JobInjection() {
                     <div className="flex flex-row gap-2">
                         <div className="w-full">
                             <label className="block mb-2 text-sm font-mono text-white dark:text-white">Cargo:</label>
-                            <input type="text" id="first_name" {...register("position")} className="bg-gray-50 border border-gray-300 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-neutral-700 dark:hover:bg-neutral-800" required autoFocus/>
+                            <input type="text" id="first_name" {...register("position")} className="bg-gray-50 border border-gray-300 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-neutral-700 dark:hover:bg-neutral-800" required autoFocus />
                         </div>
                         <div className="w-3/4">
                             <label className="block mb-2 text-sm font-mono text-white dark:text-white">Senioridade:</label>
@@ -68,9 +68,9 @@ export default function JobInjection() {
                                 {...register("seniority")}
                                 render={({ field }) => (
                                     <Select
-                                    className="my-react-select-container"
-   classNamePrefix="my-react-select"
-                                    placeholder="Selecione"
+                                        className="my-react-select-container"
+                                        classNamePrefix="my-react-select"
+                                        placeholder="Selecione"
                                         options={optionsSeniority}
                                         value={optionsSeniority.find(option => option.value === field.value) || null}
                                         onChange={selectedOption => field.onChange(selectedOption?.value)}
@@ -88,9 +88,9 @@ export default function JobInjection() {
                             {...register("modality")}
                             render={({ field }) => (
                                 <Select
-className="my-react-select-container"
-   classNamePrefix="my-react-select"
-                                placeholder="Selecione"
+                                    className="my-react-select-container"
+                                    classNamePrefix="my-react-select"
+                                    placeholder="Selecione"
                                     options={optionsModality}
                                     value={optionsModality.find(option => option.value === field.value) || null}
                                     onChange={selectedOption => field.onChange(selectedOption?.value)}
@@ -105,9 +105,9 @@ className="my-react-select-container"
                             {...register("period")}
                             render={({ field }) => (
                                 <Select
-                                className="my-react-select-container"
-   classNamePrefix="my-react-select"
-                                placeholder="Selecione"
+                                    className="my-react-select-container"
+                                    classNamePrefix="my-react-select"
+                                    placeholder="Selecione"
                                     options={optionsData}
                                     value={optionsData.find(option => option.value === field.value) || null}
                                     onChange={selectedOption => field.onChange(selectedOption?.value)}
@@ -117,18 +117,18 @@ className="my-react-select-container"
                     </div>
                 </form>
                 <div className="flex items-center justify-center p-4">
-                    
-                    {isFormValid? 
-                    ( <SearchJobButton
-                        position={formValues.position}
-                        seniority={formValues.seniority}
-                        modality={formValues.modality}
-                        period={formValues.period}
-                        /> ) : (
-                        <button disabled className="px-2 flex font-mono text-white dark:text-white">
-                                    Prencha os dados
-                                </button>
-                    )}
+
+                    {isFormValid ?
+                        (<SearchJobButton
+                            position={formValues.position}
+                            seniority={formValues.seniority}
+                            modality={formValues.modality}
+                            period={formValues.period}
+                        />) : (
+                            <button disabled className="px-2 flex font-mono text-white dark:text-white">
+                                Prencha os dados
+                            </button>
+                        )}
                 </div>
             </div>
         </div>

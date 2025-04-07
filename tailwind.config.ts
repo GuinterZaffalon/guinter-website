@@ -25,6 +25,7 @@ const config: Config = {
       fontFamily: {
         virgil: ["Virgil", "serif"],
         jetbrainsmono: ["JetBrains Mono", "monospace"],
+        lewis: ["Lewis", "serif"],
       },
     },
   },
