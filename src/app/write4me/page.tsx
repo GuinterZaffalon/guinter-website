@@ -82,7 +82,7 @@ export default function Write4Me() {
                     </div>
                     <div className="w-full p-1">
                         <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
-                            Descricao:<span className="text-sm text-gray-600 font-normal ml-2">(descreva em 2 linhas no máx!)</span>
+                            Descrição:<span className="text-sm text-gray-600 font-normal ml-2">(descreva em 2 linhas no máx!)</span>
                         </label>
                         <input
                             type="text"
@@ -94,21 +94,21 @@ export default function Write4Me() {
                         />
                     </div>
                     <div className="w-full p-1">
-                        <label className="block mb-2 text-xl font-nuno font-bold text-white dark:text-black">
+                        <label className="block mb-1 text-xl font-nuno font-bold text-white dark:text-black">
                             Usando Framework?
                         </label>
                     </div>
-                    <div className="flex justify-around">
+                    <div className="flex justify-around w-full gap-3">
                         <button
-                        type="button"
+                            type="button"
                             onClick={() => handleClick(true)}
-                            className="px-4 pb-2 pt-2 border rounded-lg bg-black">
+                            className="w-full p-2 border rounded-lg bg-black">
                             Sim
                         </button>
                         <button
-                        type="button"
+                            type="button"
                             onClick={() => handleClick(false)}
-                            className="px-4 pb-2 pt-2 border rounded-lg bg-black">
+                            className="w-full border rounded-lg bg-black">
                             Não
                         </button>
                     </div>

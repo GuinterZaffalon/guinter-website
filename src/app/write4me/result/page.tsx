@@ -51,21 +51,24 @@ export default function Result() {
 
     return (
         <div className="bg-white w-full min-h-screen">
-            <div className="flex items-center justify-center pt-10 pb-5 gap-3 flex-col">
+            <div className="flex items-center justify-center pt-5 pb-5 gap-3 flex-col px-4">
                 <h1 className="text-4xl text-white font-lewis bg-black p-2 font-bold dark:text-white">WRITE 4 ME</h1>
-                <div className=' lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-1/2'>
-                <CopyBlock
-                    text={resultSelect}
-                    language={"markdown"}
-                    showLineNumbers={true}
-                    theme={dracula}
-                    codeBlock={true}
-                    codeBlockStyle={{ borderRadius: '5px' }}
+                <label className="block mb-2 text-xl font-nuno font-bold text-black dark:text-black"> Seu Readme está pronto ↓</label>
+                <div className="w-full max-w-4xl overflow-auto rounded-md">
+                    <CopyBlock
+                        text={resultSelect}
+                        language={"markdown"}
+                        showLineNumbers={true}
+                        theme={dracula}
+                        codeBlock={true}
+                        codeBlockStyle={{ borderRadius: '5px', minWidth: '100%' }}
                     />
-                    </div>
+                </div>
             </div>
+            <label className="justify-center items-center text-center flex mb-2 text-xl font-nuno text-black dark:text-black"> Obrigado por usar Write4Me ❤</label>
         </div>
-    )
+    );
+
 }
 
 function Template(nome: string, describe: string, frameworkRequirements: string[], frameworkInstallation: string[]) {
