@@ -6,48 +6,34 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-white px-4">
       <Header />
-      <div className="flex-row items-center flex justify-around p-10 sm:flex-wrap ">
-        <div className="flex flex-col justify-center items-center gap-2">
-          <div className="flex flex-row gap-3">
-            <span className="text-2xl font-virgil dark:text-black">olá!</span>
-            <span className="text-3xl font-jetbrainsmono dark:text-black">Guinter Zaffalon</span>
-            <span className="text-2xl font-virgil dark:text-black">aqui 👋</span>
+      <div className="items-center justify-center flex">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 mt-10 max-w-7xl w-full">
+          <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
+            <div className="flex gap-2 text-black">
+              <span className="text-2xl font-virgil">olá!</span>
+              <span className="text-3xl font-jetbrainsmono">Guinter Zaffalon</span>
+              <span className="text-2xl font-virgil">aqui 👋</span>
+            </div>
+            <span className="text-xl font-virgil text-black">Mobile and Web Developer!</span>
+            <div className="mt-5 flex flex-col items-center md:items-start justify-center gap-2">
+              <span className="text-2xl font-virgil text-black">Hard Skills</span>
+              <span className="text-xl font-jetbrainsmono text-black">
+                Flutter | Next.js | Swift && SwiftUI <br />
+                Prisma | Postgres | Docker | Firebase
+              </span>
+            </div>
           </div>
-          <span className="text-xl font-virgil dark:text-black">Mobile and Web Developer!</span>
-          <div className="mt-7 flex-col flex items-center justify-center">
-            <span className="text-2xl font-virgil dark:text-black">Hard Skills</span>
-            <span className="text-xl font-jetbrainsmono dark:text-black">
-              Flutter | Next.js | Swift && SwiftUI <br />
-              Prisma | Postgres | Docker | Firebase
-            </span>
-          </div>
+          <Image
+            src={icon}
+            alt="icon do us"
+            height={300}
+            width={300}
+            className="rounded-3xl shadow-xl object-cover"
+          />
         </div>
-        <Image
-          src={icon}
-          alt="icon do us"
-          height={400}
-          width={400}
-          className="rounded-3xl shadow-xl"
-        />
       </div>
-      {/* <div className="items-center flex flex-col justify-center mt-5">
-        <span className="text-4xl font-virgil dark:text-black">Projetos!</span>
-        <div className="w-full flex flex-row p-3">
-          <div className="flex flex-col w-1/2 gap-2">
-            <span className="text-2xl font-jetbrainsmono justify-center flex dark:text-black">Reading Tracker</span>
-            <span className="text-xl font-virgil text-justify dark:text-black">
-              Aplicativo para acompanhar leituras, permitindo ao
-              usuário registrar livros com sua avaliação, comentários
-              e informações sobre ele. Também há a possibilidade
-              de criar listas para leituras futuras ou organizar os
-              já lidos. Os dados dos livros são buscados pela API aberta do OpenLibrary.org e os dados persistidos com Sqlite.
-            </span>
-            <span className="text-xl font-virgil dark:text-black">Desenvolvido com: <span className="dark:text-black font-jetbrainsmono">Flutter, chamadas HTTP e Sqlite</span></span>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }
