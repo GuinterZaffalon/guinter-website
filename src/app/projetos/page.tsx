@@ -30,7 +30,9 @@ export default function Projetos() {
                 <div className="flex flex-col w-full gap-2">
                     <span className="text-2xl font-jetbrainsmono justify-center flex dark:text-black">Job Injection</span>
                     <span className="text-xl font-virgil text-justify w-1/2 dark:text-black">
-                        Aplicacao Web para filtrar vagas no LinkedIn
+                        Aplicacao Web para filtrar vagas no LinkedIn, retirando cerca de 83% das vagas
+                        "fantasmas", assim mostrando apenas as vagas que realmente existem no mercado
+                        e são aplicadas aos termos filtrados.
                     </span>
                     <span className="text-xl font-virgil dark:text-black">Desenvolvido com: <span className="dark:text-black font-jetbrainsmono">Next.Js e TailwindCss</span></span>
                 </div>
