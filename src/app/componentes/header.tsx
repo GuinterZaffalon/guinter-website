@@ -6,7 +6,7 @@ export function Header() {
             </div>
             <div className="flex flex-row font-virgil text-black text-2xl gap-2">
                 <div className="mr-4">
-                    Projetos
+                     <a href="/projetos">Projetos</a>
                 </div>
                 <div className="mr-4">
                     Contato
