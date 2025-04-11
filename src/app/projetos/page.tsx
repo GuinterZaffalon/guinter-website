@@ -17,6 +17,23 @@ export default function Projetos() {
                     </span>
                     <span className="text-xl font-virgil dark:text-black">Desenvolvido com: <span className="dark:text-black font-jetbrainsmono">Flutter, chamadas HTTP e Sqlite</span></span>
                 </div>
+                <div className="flex flex-col w-full gap-2">
+                    <span className="text-2xl font-jetbrainsmono justify-center flex dark:text-black">Write 4 Me</span>
+                    <span className="text-xl font-virgil text-justify w-1/2 dark:text-black">
+                        Aplicacao Web para escrever um README.md de um projeto open source com apenas
+                        3 perguntas, assim gerando mais valor para seu repositorio e mostrando
+                        para a comunidade formas de instalar e rodar o projeto, variando de linguagem
+                        a lingugagem utilizada.
+                    </span>
+                    <span className="text-xl font-virgil dark:text-black">Desenvolvido com: <span className="dark:text-black font-jetbrainsmono">Next.Js e TailwindCss</span></span>
+                </div>
+                <div className="flex flex-col w-full gap-2">
+                    <span className="text-2xl font-jetbrainsmono justify-center flex dark:text-black">Job Injection</span>
+                    <span className="text-xl font-virgil text-justify w-1/2 dark:text-black">
+                        Aplicacao Web para filtrar vagas no LinkedIn
+                    </span>
+                    <span className="text-xl font-virgil dark:text-black">Desenvolvido com: <span className="dark:text-black font-jetbrainsmono">Next.Js e TailwindCss</span></span>
+                </div>
             </div>
         </div>
     )
