@@ -21,6 +21,7 @@ export default function Home() {
               <span className="text-2xl font-virgil text-black">Hard Skills</span>
               <span className="text-xl font-jetbrainsmono text-black">
                 Flutter | Next.js | Swift && SwiftUI <br />
+                Typescript | PHP | Fastify | Node <br />
                 Prisma | Postgres | Docker | Firebase
               </span>
             </div>
