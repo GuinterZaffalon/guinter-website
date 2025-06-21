@@ -17,7 +17,8 @@ const config: Config = {
         card1: "#F8333C",
         card2: "#FCAB10",
         card3: "#2B9EB3",
-        boxshadow: "#DBD5B5"
+        boxshadow: "#DBD5B5",
+        "space-blue": '#0a1a3c',
       },
       boxShadow: {
 				custoum: "10px 10px 0px -1px rgba(0,0,0,1)",
@@ -26,6 +27,7 @@ const config: Config = {
         virgil: ["Virgil", "serif"],
         jetbrainsmono: ["JetBrains Mono", "monospace"],
         lewis: ["Lewis", "serif"],
+        mono: ['"VT323"', "monospace"],
       },
       keyframes: {
         'slide-left': {
