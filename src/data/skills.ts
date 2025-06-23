@@ -1,78 +1,39 @@
 import {
   type IconType,
-  SiAstro,
-  SiBootstrap,
-  SiCss,
   SiDocker,
-  SiHtml5,
-  SiJavascript,
-  SiMongodb,
-  SiMysql,
+  SiFlutter,
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
   SiPostgresql,
   SiReact,
-  SiRedis,
-  SiRubyonrails,
-  SiSass,
+  SiSupabase,
+  SiSwift,
   SiTailwindcss,
+  SiTypescript,
 } from '@icons-pack/react-simple-icons'
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
   [
     {
-      field: 'Frontend',
+      field: 'Full-Stack',
       skills: [
-        { skill: 'html', icon: SiHtml5 },
-        { skill: 'css', icon: SiCss },
-        { skill: 'javascript', icon: SiJavascript },
-        { skill: 'react', icon: SiReact },
-        { skill: 'sass', icon: SiSass },
-        { skill: 'tailwind', icon: SiTailwindcss },
         { skill: 'nextjs', icon: SiNextdotjs },
-        { skill: 'astro', icon: SiAstro },
-        {
-          skill: 'bootstrap',
-          icon: SiBootstrap,
-        },
+        { skill: 'typescript', icon: SiTypescript },
+        { skill: 'react', icon: SiReact },
+        { skill: 'tailwind', icon: SiTailwindcss },
+        { skill: 'node', icon: SiNodedotjs },
+        {skill: 'docker', icon: SiDocker,},
+        {skill: 'nginx', icon: SiNginx,},
+        {skill: 'postgresql', icon: SiPostgresql}
       ],
     },
     {
-      field: 'Backend',
+      field: 'Mobile',
       skills: [
-        {
-          skill: 'nodejs',
-          icon: SiNodedotjs,
-        },
-        {
-          skill: 'ruby on rails',
-          icon: SiRubyonrails,
-        },
-        {
-          skill: 'redis',
-          icon: SiRedis,
-        },
-        {
-          skill: 'postgresql',
-          icon: SiPostgresql,
-        },
-        {
-          skill: 'mongodb',
-          icon: SiMongodb,
-        },
-        {
-          skill: 'mysql',
-          icon: SiMysql,
-        },
-        {
-          skill: 'nginx',
-          icon: SiNginx,
-        },
-        {
-          skill: 'docker',
-          icon: SiDocker,
-        },
+        { skill: 'flutter', icon: SiFlutter },
+        { skill: 'swift', icon: SiSwift },
+        { skill: 'supabase', icon: SiSupabase },
       ],
     },
   ]
