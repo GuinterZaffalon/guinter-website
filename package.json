@@ -12,6 +12,7 @@
     "@icons-pack/react-simple-icons": "^13.1.0",
     "@material-tailwind/react": "^2.1.10",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
+    "@radix-ui/react-tooltip": "^1.2.7",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

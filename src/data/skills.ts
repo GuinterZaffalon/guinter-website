@@ -2,7 +2,7 @@ import {
   type IconType,
   SiAstro,
   SiBootstrap,
-  SiCss3,
+  SiCss,
   SiDocker,
   SiHtml5,
   SiJavascript,
@@ -25,7 +25,7 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
       field: 'Frontend',
       skills: [
         { skill: 'html', icon: SiHtml5 },
-        { skill: 'css', icon: SiCss3 },
+        { skill: 'css', icon: SiCss },
         { skill: 'javascript', icon: SiJavascript },
         { skill: 'react', icon: SiReact },
         { skill: 'sass', icon: SiSass },

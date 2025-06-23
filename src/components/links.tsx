@@ -2,7 +2,7 @@ import {
   IconType,
   SiGithub,
   SiGmail,
-  SiLinkedin,
+  SiLinkerd,
   SiMedium,
 } from '@icons-pack/react-simple-icons'
 
@@ -17,7 +17,7 @@ export default function Links() {
       href: 'https://github.com/johndoe',
     },
     {
-      icon: SiLinkedin,
+      icon: SiLinkerd,
       href: 'https://www.linkedin.com/in/johndoe/',
     },
     {
