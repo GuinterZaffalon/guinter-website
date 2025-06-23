@@ -10,7 +10,6 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				backgroundgradient1: '#0F2845',
 				backgroundgradient2: '#717297',
@@ -19,7 +18,10 @@ const config: Config = {
 				card2: '#FCAB10',
 				card3: '#2B9EB3',
 				boxshadow: '#DBD5B5',
-				'space-blue': '#0a1a3c',
+				main: 'oklch(72.27% 0.1894 50.19)',
+				'main-foreground': 'oklch(0% 0 0)',
+				background: 'oklch(95.38% 0.0357 72.89)',
+				border: 'oklch(0% 0 0)',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
@@ -48,7 +50,16 @@ const config: Config = {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
-				border: 'hsl(var(--border))',
+				borderRadius: {
+					base: '5px',
+				},
+				fontWeight: {
+					base: '500',
+					heading: '700',
+				},
+				boxShadow: {
+					shadow: '4px 4px 0px 0px oklch(0% 0 0)', // substitua pelo valor real do --shadow
+				},
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				chart: {
