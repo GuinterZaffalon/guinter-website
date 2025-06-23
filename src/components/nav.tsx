@@ -15,11 +15,11 @@ export default function Nav() {
     },
     {
       path: '/about',
-      text: 'About',
+      text: 'Sobre',
     },
     {
       path: '/work',
-      text: 'Work',
+      text: 'Projetos',
     },
   ]
 
