@@ -5,24 +5,25 @@ import {
   SiLinkerd,
   SiMedium,
 } from '@icons-pack/react-simple-icons'
+import { LucideLinkedin } from 'lucide-react';
 
 export default function Links() {
   const links: { icon: IconType; href: string }[] = [
     {
       icon: SiGmail,
-      href: 'mailto:johndoe@gmail.com',
+      href: 'mailto:guinterzafa@gmail.com',
     },
     {
       icon: SiGithub,
-      href: 'https://github.com/johndoe',
+      href: 'https://github.com/GuinterZaffalon',
     },
     {
-      icon: SiLinkerd,
-      href: 'https://www.linkedin.com/in/johndoe/',
+      icon: LucideLinkedin,
+      href: 'https://www.linkedin.com/in/guinter-zaffalon-857131241/',
     },
     {
       icon: SiMedium,
-      href: 'https://medium.com/@johndoe',
+      href: 'https://medium.com/@guinterzafa',
     },
   ]
 

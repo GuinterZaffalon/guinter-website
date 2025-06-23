@@ -26,7 +26,7 @@ const geistLewis = localFont({
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'John Doe',
+  title: 'Guinter Zaffalon',
 }
 
 export default function RootLayout({
