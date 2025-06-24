@@ -11,10 +11,8 @@ export default function About() {
 
       <div className="mb-10 text-base sm:text-lg">
         <p>
-          Apaixonado por desenvolver soluções e obcecado por tudo
-          que amo! Empenhado em dar meu melhor em tudo que prático, é assim
-          que me tornei faixa preta e campeão Sul Americano no Taekwondo, e da mesma
-          forma estou evoluindo minha senioriedade em desenvolvimento.
+          Apaixonado por desenvolver soluções e obcecado por tudo que amo!
+          Empenhado em dar o meu melhor em tudo o que pratico — foi assim que me tornei faixa preta e campeão sul-americano de Taekwondo. Da mesma forma, estou evoluindo continuamente minha senioridade como desenvolvedor.
         </p>
       </div>
 
