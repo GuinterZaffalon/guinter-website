@@ -9,7 +9,7 @@ export default function Work() {
 
       <div className="flex flex-col gap-5">
         <div
-          className="rounded-md border-2 border-neutral-800 bg-[#ff7a05] p-4 shadow-[4px_4px_0px_0px_#000] dark:bg-[#eb6d00] sm:p-5"
+          className="rounded-md border-2 border-neutral-800 bg-[#00c8f0] p-4 shadow-[4px_4px_0px_0px_#000] dark:bg-[#009dbd] sm:p-5"
         >
           <AspectRatio
             className="relative rounded-md border-2 border-neutral-800 shadow-[4px_4px_0px_0px_#000] mb-[-2px]"
@@ -40,7 +40,7 @@ export default function Work() {
           </div>
         </div>
         <div
-          className="rounded-md border-2 border-neutral-800 bg-[#ff7a05] p-4 shadow-[4px_4px_0px_0px_#000] dark:bg-[#eb6d00] sm:p-5"
+          className="rounded-md border-2 border-neutral-800 bg-[#00c8f0] p-4 shadow-[4px_4px_0px_0px_#000] dark:bg-[#009dbd] sm:p-5"
         >
           <AspectRatio
             className="relative rounded-md border-2 border-neutral-800 shadow-[4px_4px_0px_0px_#000] mb-[-2px]"
